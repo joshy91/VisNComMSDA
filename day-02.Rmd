@@ -178,6 +178,39 @@ print(m1[,2])
 
 
 ### Data Frame
+```{r}
+d2 <- read.csv(file="dataset.csv", stringsAsFactors = FALSE)
+```
+
+```{r}
+print(d2)
+```
+
 
 ### List
+```{r}
+l1 <- list(vec1 = v1, myletters = letters, mynumbers = c(1:100), mydata =d2, mymatrix=m1)
+```
+
+
+```{r}
+print(l1)
+```
+
+```{r}
+l2 <- list(v1, letters,c(1:100),d2,m1)
+```
+
+```{r}
+print(l2[2])
+```
+
+```{r}
+print(l2[[2]])
+```
+
+```{r}
+class(l2[2])
+class(l2[[2]])
+```
 
