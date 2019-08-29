@@ -135,12 +135,47 @@ table(f2)
 ```
 
 ```{r}
-
+months <- c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 ```
 
+```{r}
+months_fact <- factor(months, levels=c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"), ordered=TRUE)
+```
 
+```{r}
+plot(table(months_fact))
+```
+
+```{r}
+print(months_fact)
+```
 
 ### Matrix
+
+```{r}
+matrix(v2, nrow =4, ncol = 1)
+```
+
+```{r}
+matrix(v2, nrow =2, ncol = 2)
+```
+
+```{r}
+matrix(v2, nrow =2, ncol = 2, byrow=TRUE)
+```
+
+```{r}
+m1 <- matrix(v2, nrow =2, ncol = 2)
+```
+
+```{r}
+print(m1[2,1])
+```
+
+```{r}
+print(m1[,2])
+```
+
 
 ### Data Frame
 
