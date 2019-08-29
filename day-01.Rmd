@@ -22,6 +22,21 @@ print(v1)
 v2 <- c(1:10)
 ```
 
+```{r}
+v3 <- c(TRUE, FALSE, TRUE, FALSE)
+```
+
+```{r}
+class(v1)
+class(v2)
+class(v3)
+```
+
+```{r}
+v4 <- c(-1.5,2.3, 4.7)
+class(v4)
+```
+  
 
 ### Factor
 
